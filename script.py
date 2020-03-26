@@ -11,6 +11,7 @@ d_x = d + datetime.timedelta(days=days)
 start_date = str(d.year)+"-"+str(d.month)+"-"+str(d.day)
 end_date = str(d_x.year)+"-"+str(d_x.month)+"-"+str(d_x.day)
 
+# list of keywords that lead to the food not being free
 banned_words = ['Oxford Housing','Bursley Hall','South Quad','South Quadrangle','North Quad','North Quadrangle','East Quad','East Quadrangle','Mosher-Jordan Hall', "Mary Markley Hall"]
 url = "https://events.umich.edu/list?filter=tags:Food,&range="+start_date+"to"+end_date
 print(url)
